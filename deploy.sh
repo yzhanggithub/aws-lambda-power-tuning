@@ -1,6 +1,6 @@
 #!/bin/bash
 # config
-DEFAULT_BUCKET_NAME=your-sam-templates-bucket
+DEFAULT_BUCKET_NAME=lambda-perf-tuning-test
 DEFAULT_STACK_NAME=lambda-power-tuning
 
 BUCKET_NAME=${BUCKET_NAME:-$DEFAULT_BUCKET_NAME}

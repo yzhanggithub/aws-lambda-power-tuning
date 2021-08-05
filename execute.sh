@@ -9,6 +9,7 @@ STATE_MACHINE_ARN=$(aws cloudformation describe-stacks --stack-name $STACK_NAME 
 # start execution
 EXECUTION_ARN=$(aws stepfunctions start-execution --state-machine-arn $STATE_MACHINE_ARN --input "$INPUT"  --query 'executionArn' --output text)
 
+echo $EXECUTION_ARN
 echo -n "Execution started..."
 
 # poll execution status until completed
